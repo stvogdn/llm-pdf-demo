@@ -52,6 +52,12 @@ def main():
            
         st.write(response)
     
+    # show source code
+    show_source=st.checkbox("Show source code")
+    if show_source:
+      with open("app.py", "r") as f:
+        st.code(f.read())
+        
 
 if __name__ == '__main__':
     main()
